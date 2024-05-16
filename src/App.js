@@ -12,6 +12,7 @@ import Patient2 from './Patient2';
 import TodaysApp from './TodaysApp';
 import Dlogin from './Dlogin';
 import Doclist from './DocList';
+import DoctorSign from './Dsignup';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
   
           <Route path="/Patient3" element={<Patient3 />} /> 
 
-
+          <Route path="/landingPage" element={<LandingPage />} />
 
           <Route path="/Patient1" element={<Patient1 />} />
 
@@ -47,9 +48,9 @@ function App() {
           <Route path="Dlogin" element={<Dlogin />} /> 
 
           <Route path="/Dsign" element={<Dsign />} />
-
+          <Route path="/Dsignup" element={<DoctorSign/>}/>
           <Route path="/TodaysApp" element={<TodaysApp />} />  
-
+          <Route path="/Doclist" element={<Doclist />} />  
 
 
 
@@ -62,33 +63,3 @@ function App() {
 export default App;
 
 
-// import React from 'react';
-// import './App.css';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import LandingPage from './landingPage';
-// import Login from './login';
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route index element={<LandingPage />} />
-//         <Route path='/landingPage' element={<LandingPage />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-
-// import './App.css';
-// import TodaysApp from './TodaysApp';
-
-// function App() {
-//      return (
-//       <>
-//       <TodaysApp />
-//       </>
-//      );
-// }
-//  export default App;

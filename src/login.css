@@ -14,7 +14,15 @@
   background-color: #F9E4A0; /* Background color for the left box */
 }
 
-input[type="text"] {
+input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: #777; /* Faint grey color for input text */
+}
+
+input[type="password"] {
   width: 80%;
   padding: 10px;
   margin-bottom: 10px;
@@ -53,15 +61,17 @@ hr {
 
 .box2 {
   font-size: 0.7rem;
-  margin-left: 18rem;
+  margin-left: 25rem;
   color: #145ead;
   margin-top: -0.5rem;
   font-weight: bold;
 }
 
 .SignUp {
-  margin-left: 7rem;
+  margin-top: 2rem;
+  margin-left: 10rem;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 .Welcome{
   font-size: 3rem;
@@ -71,14 +81,14 @@ hr {
 
 
 @media screen and (max-width : 840px){
-.box2{
-margin-left: 6rem;
-font-size: 0.6rem;
-}
-.SignUp{
-  margin-left: 1.5rem;
-  font-size: 0.7rem;
-}
+  .box2 {
+    margin-left: 6rem;
+    font-size: 0.6rem;
+  }
+  .SignUp {
+    margin-left: 1.5rem;
+    font-size: 0.7rem;
+  }
 .Welcome{
   font-size: 1.5rem;
 }
@@ -86,10 +96,10 @@ font-size: 0.6rem;
   margin-top: 50rem;
 }
 }
-@media screen and (max-width : 430px){
+@media screen and (max-width: 430px) {
   .container {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -98,60 +108,66 @@ font-size: 0.6rem;
     margin: 2rem;
     margin-right: 6rem;
   }
-  
+
   .box {
-    width: 50%;
+    width: 90%;
+    height: 70vh;
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
   }
-  
+
   .box:first-child {
     background-color: #F9E4A0;
   }
-  
-  input[type="text"] {
+
+  input[type="email"] {
     width: 100%;
   }
-  
+
+  input[type="password"] {
+    width: 100%;
+  }
+
   input[type="submit"] {
     width: 60%;
   }
-  
+
   .grid {
     margin-top: 2rem;
     font-size: 2rem;
   }
-  
+
   .LOGO {
-    width: 20%;
+    margin-top:-1rem;
+    width: 60%;
+    height: 120px;
   }
-  
+
   hr {
     padding: -1rem;
   }
-  
+
   .box2 {
     font-size: 0.7rem;
-    margin-left: 50%;
+    margin-left: 11rem;
     color: #145ead;
     margin-top: -0.5rem;
     font-weight: bold;
   }
-  
+
   .SignUp {
     margin-left: 9%;
     font-size: 1rem;
   }
-  
+
   .Welcome {
-    position: absolute;
-    top: calc(50% - 260px); /* Adjust the top position to center vertically */
+    position:static;
+    top: calc(55% - 200px);
     left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     padding: 42px;
-    width: -4rem;
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-left: 1rem;
   }
 }

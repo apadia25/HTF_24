@@ -1,59 +1,33 @@
-.landing-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #F9E4A0;
-    padding: 2rem;
-    height: 1rem;
+/* Navbar.css */
+
+.landing-page {
+  background-color: #fff0bd; /* Change the background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  height: 90px;
 }
-.LOGO {
-    width: 39%;
-    display: flex;
-    margin: auto;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar{
-    display: flex;
-    font-size:150%;
-    align-items: center;
+
+.logo img {
+  width: 90px; /* Adjust logo width as needed */
+  height: 70px; /* Maintain aspect ratio */
 }
+
 .nav-links {
-    margin-left: auto;
-    display: flex;
-  }
-  
-  .nav-links a {
-    color: black;
-    text-decoration: none;
-    margin-left: 2rem; 
-  }
-  
-  .nav-links a:hover {
-    text-decoration:underline;
-  }
+  display: flex;
+  font-size: 25px;
+}
 
+.nav-links a {
+  margin-right: 20px; /* Adjust link spacing as needed */
+  color: #000000; /* Change link color as needed */
+  text-decoration: none;
+}
 
-  @media screen and (max-width : 430px){
-   .landing-page{
-    height: 0rem;
-    width: 38rem;
-   }
-    .LOGO{
-        width: 40%;
-    }
-    .landing-page {
-        height: 0rem;
-        width: 21rem;
-    }
-  }
-  
-
-  @media screen and (max-width : 320px){
-     .LOGO{
-         width: 50%;
-     }
-     .navbar{
-        display: flex;
-        font-size:100%;
-        align-items: center;
-    }
+.nav-links a:hover {
+  color: #007bff; /* Change link hover color as needed */
 }

@@ -14,7 +14,7 @@ function   SignUp() {
       </div>
       
       <div className="box">
-        <div className='box1'>
+        <div className='box1'> 
         <center><h1>SignUp</h1></center>
         </div>
         <br></br>
